@@ -5,7 +5,7 @@ const turno = require("./turno.js");
 
 const modelo = (id = ultimoId++) => {
   const nome = prompt("Nome: ");
-  const horas_totais = prompt("Horas totais: ").replace("," , ".");
+  const horas_totais = prompt("Horas totais: ").replaceAll("," , ".");
   turno.index();
   const id_turno = parseInt(prompt("ID turno: "));
   if (nome != "" && horas_totais != "" && turno.show(id_turno)) {
