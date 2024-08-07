@@ -18,7 +18,7 @@ const modelo = (id = ultimoId++) => {
     };
   }
 
-  console.log("Nome inválido.");
+  console.log("Dados inválidos.");
 };
 
 const store = () => {
